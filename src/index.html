@@ -11,8 +11,44 @@
 
 <body>
   <app-root></app-root>
-  
-  <script> (function (d, w, c) { if(!d.getElementById("spd-busns-spt")) { var n = d.getElementsByTagName('script')[0], s = d.createElement('script'); var loaded = false; s.id = "spd-busns-spt"; s.async = "async"; s.setAttribute("data-self-init", "false"); s.setAttribute("data-init-type", "opt"); s.src = 'https://cdn.in-freshbots.ai/assets/share/js/freshbots.min.js'; s.setAttribute("data-client", "b8af1f3876b4743f5be0c6596bdf1a05ff63998e"); s.setAttribute("data-bot-hash", "7ffc3a0a96fd4475ce2ff779bed2616a78ef3ed4"); s.setAttribute("data-env", "prod"); s.setAttribute("data-region", "in"); if (c) { s.onreadystatechange = s.onload = function () { if (!loaded) { c(); } loaded = true; }; } n.parentNode.insertBefore(s, n); } }) (document, window, function () { Freshbots.initiateWidget({ autoInitChat: false, getClientParams: function () { return ; } }, function(successResponse) { }, function(errorResponse) { }); }); </script>
+  <script>
+    (function (d, w, c) {
+      if (!d.getElementById("spd-busns-spt")) {
+        var n = d.getElementsByTagName('script')[0],
+          s = d.createElement('script');
+        var loaded = false;
+        s.id = "spd-busns-spt";
+        s.async = "async";
+        s.setAttribute("data-self-init", "false");
+        s.setAttribute("data-init-type", "opt");
+        s.src = 'https://cdn.in-freshbots.ai/assets/share/js/freshbots.min.js';
+        s.setAttribute("data-client", "b8af1f3876b4743f5be0c6596bdf1a05ff63998e");
+        s.setAttribute("data-bot-hash", "797d08d07e440a38ee157ce4b4fc80c06e1e3daa");
+        s.setAttribute("data-env", "prod");
+        s.setAttribute("data-region", "in");
+        if (c) {
+          s.onreadystatechange = s.onload = function () {
+            if (!loaded) {
+              c();
+            }
+            loaded = true;
+          };
+        }
+        n.parentNode.insertBefore(s, n);
+      }
+    })(document, window, function () {
+      Freshbots.initiateWidget({
+        autoInitChat: false,
+        getClientParams: function () {
+          return;
+        }
+      },
+      // print: function(exercises){
+      //   console.log(exercises);
+      // },
+      function (successResponse) { }, function (errorResponse) { });
+    });
+  </script>
 </body>
 
 </html>
