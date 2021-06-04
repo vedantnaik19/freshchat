@@ -8,11 +8,11 @@ app.use(express.static(__dirname + '/dist/chat-test'));
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/chat-test/index.html'));
-    
+
 });
 
 app.get('/exercises', (req, res) => {
-    res.json({ data: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. \r \m Lorem Ipsum has been the industry\'s standard dummy \n text ever since the 1500s, when an unknown \r printer took a galley of type and scrambled it to make a type specimen book. \r \mIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.' });
+    res.json({ data: 'Ipsum is simply dummy text of the printing and typesetting industry. \r \n Lorem Ipsum has been the industry\'s standard dummy \n text ever since the 1500s, when an unknown \r printer took a galley of type and scrambled it to make a type specimen book. \r \nIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.' });
 })
 
 app.listen(process.env.PORT || 8080);
