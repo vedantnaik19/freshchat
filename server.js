@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/exercises', (req, res) => {
-    res.json({ data: 'Ipsum is simply dummy text of the printing and typesetting industry. \r \n Lorem Ipsum has been the industry\'s standard dummy \n text ever since the 1500s, when an unknown \r printer took a galley of type and scrambled it to make a type specimen book. \r \nIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.' });
+    res.json({ data: 'Ipsum                                                        is simply dummy text of the printing and typesetting industry. \r \n Lorem Ipsum has been the industry\'s standard dummy \n text ever since the 1500s, when an unknown \r printer took a galley of type and scrambled it to make a type specimen book. \r \nIt has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.' });
 })
 
 app.listen(process.env.PORT || 8080);
