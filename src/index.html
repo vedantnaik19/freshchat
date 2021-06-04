@@ -41,9 +41,21 @@
         autoInitChat: false,
         getClientParams: function () {
           return;
+        },
+
+        print: function (e) {
+          console.log(e);
+          return { "code": "200" };
         }
-      },
-        function (successResponse) { }, function (errorResponse) { });
+      }, function (successResponse) {
+        console.log(successResponse);
+        return { "code": "200" };
+
+      }, function (errorResponse) {
+        console.log(errorResponse);
+        return { "code": "200" };
+
+      });
     });
   </script>
 </body>
