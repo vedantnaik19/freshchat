@@ -12,7 +12,18 @@ app.get('/', function (req, res) {
 });
 
 app.get('/exercises', (req, res) => {
-    res.json({ data: '<ul> <li>First</li> <li>Second</li> </ul>' });
+    res.json({ data: `
+    <div style="overflow: auto;
+  white-space: nowrap;">
+  <img src="https://images.pexels.com/photos/6331085/pexels-photo-6331085.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100&w=200" alt="Girl in a jacket" width="150" height="150">
+  <img src="https://images.pexels.com/photos/6331085/pexels-photo-6331085.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100&w=200" alt="Girl in a jacket" width="150" height="150">
+  <img src="https://images.pexels.com/photos/6331085/pexels-photo-6331085.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100&w=200" alt="Girl in a jacket" width="150" height="150">
+  <img src="https://images.pexels.com/photos/6331085/pexels-photo-6331085.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100&w=200" alt="Girl in a jacket" width="150" height="150">
+  <img src="https://images.pexels.com/photos/6331085/pexels-photo-6331085.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100&w=200" alt="Girl in a jacket" width="150" height="150">
+  <img src="https://images.pexels.com/photos/6331085/pexels-photo-6331085.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100&w=200" alt="Girl in a jacket" width="150" height="150">
+  <img src="https://images.pexels.com/photos/6331085/pexels-photo-6331085.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=100&w=200" alt="Girl in a jacket" width="150" height="150">
+  </div>
+    ` });
 })
 
 app.listen(process.env.PORT || 8080);
