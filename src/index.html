@@ -43,17 +43,20 @@
           return;
         },
 
-        print: function (e) {
-          console.log(e);
-          return { "code": "200" };
-        }
-      }, function (successResponse) {
+        
+      }, 
+
+      function print(e) {
+          //console.log(e);
+        },
+      
+      function (successResponse) {
         console.log(successResponse);
-        return { "code": "200" };
+        return successResponse;
 
       }, function (errorResponse) {
         console.log(errorResponse);
-        return { "code": "200" };
+        return errorResponse;
 
       });
     });
