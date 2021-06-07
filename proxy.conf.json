@@ -1,0 +1,7 @@
+{
+    "/apis/*": {
+        "target": "https://auter3.freshchat.com",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
