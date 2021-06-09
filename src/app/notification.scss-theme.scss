@@ -1,0 +1,8 @@
+@mixin notification-theme($notifications-theme) {
+    $default-color: map-get($notifications-theme, default);
+    $info-color: map-get($notifications-theme, info);
+    $success-color: map-get($notifications-theme, success);
+    $warn-color: map-get($notifications-theme, warning);
+    $error-color: map-get($notifications-theme, error);
+    
+}

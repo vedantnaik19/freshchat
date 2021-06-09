@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth.guard';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { SpryBuddyComponent } from './spry-buddy/spry-buddy.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: '', pathMatch: 'full', redirectTo: '/login'},
+  {path: 'login', component: LoginComponent},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'sprybuddy/patients/:patientId', component: SpryBuddyComponent, canActivate: [AuthGuard]}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

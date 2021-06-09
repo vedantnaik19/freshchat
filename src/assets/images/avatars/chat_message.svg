@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 34</title>
+    <defs>
+        <path d="M19.3333333,33.8333333 C27.3414622,33.8333333 33.8333333,27.3414622 33.8333333,19.3333333 C33.8333333,11.3252045 27.3414622,4.83333333 19.3333333,4.83333333 C11.3252045,4.83333333 4.83333333,11.3252045 4.83333333,19.3333333 C4.83333333,22.8135624 6.0574072,26.0920911 8.25775969,28.6924806 L10.6072817,31.4691596 L9.03116594,33.8333333 L19.3333333,33.8333333 Z M4.56807531,31.8145537 C1.71827965,28.4466484 0,24.0906537 0,19.3333333 C0,8.65582817 8.65582817,0 19.3333333,0 C30.0108385,0 38.6666667,8.65582817 38.6666667,19.3333333 C38.6666667,30.0108385 30.0108385,38.6666667 19.3333333,38.6666667 L0,38.6666667 L4.56807531,31.8145537 Z" id="path-1"></path>
+        <linearGradient x1="4.53340833%" y1="-36.2483272%" x2="108.917296%" y2="205.226188%" id="linearGradient-3">
+            <stop stop-color="#82B1ED" offset="0%"></stop>
+            <stop stop-color="#B073FD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-34">
+            <g id="icon/24px/Message">
+                <rect id="Boundary" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="58" height="58"></rect>
+                <g id="Message" transform="translate(9.666667, 9.666667)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#979797" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-9.666667, -9.666667)" id="color/5-grey">
+                            <rect id="BG" fill="url(#linearGradient-3)" x="0" y="0" width="58" height="58"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <circle id="Oval" fill="#F07777" cx="29" cy="29" r="10"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="812px" viewBox="0 0 375 812" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Background/Pattern-1</title>
+    <defs>
+        <linearGradient x1="40.3028776%" y1="-36.2483272%" x2="62.5658909%" y2="205.226188%" id="linearGradient-1">
+            <stop stop-color="#82B1ED" offset="0%"></stop>
+            <stop stop-color="#B073FD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="375" height="812"></rect>
+    </defs>
+    <g id="Background/Pattern-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="BG" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        <g id="Circle" mask="url(#mask-3)">
+            <rect id="Boundaries" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="375" height="410"></rect>
+            <circle id="Circle-4" fill-opacity="0.24" fill="#000000" style="mix-blend-mode: overlay;" cx="188" cy="204" r="64"></circle>
+            <circle id="Circle-2" fill="#7396FD" style="mix-blend-mode: overlay;" cx="234.5" cy="251.5" r="18.5"></circle>
+        </g>
+        <circle id="Circle-5" fill-opacity="0.16" fill="#000000" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="307" cy="426" r="109"></circle>
+        <circle id="Circle-1" fill="#728BED" mask="url(#mask-3)" cx="20" cy="56" r="125"></circle>
+        <circle id="Circle-3" fill="#7396FD" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="145.5" cy="56.5" r="27.5"></circle>
+    </g>
+</svg>

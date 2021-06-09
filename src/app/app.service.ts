@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -15,14 +16,43 @@ export class AppService {
 
   constructor(private http: HttpClient) { }
 
-  getBodyParts(){
-    const bodyParts = [
-      'Shoulder',
-      'Knee',
-      'Hip',
-      'Ankle'
-    ]
-  
-    return of(bodyParts);
+  getRelatedPatients(){
+
+    return this.http.get('/apis/v1/patient?activeFilter=false');
+  }
+
+  getPatientDetails(patientId: any){
+    return this.http.get(`/apis/v1/patient/${patientId}`);
+  }
+
+  getSpryBuddyAccount(userId: any){
+    return this.http.get(`/apis/v1/sprybuddy/accounts?user_id=${userId}`);
+  }
+
+  createSpryBuddyAccount(userId:any, patient:any){
+    const createUserRequest = {
+      reference_id: userId,
+      email: patient.email_address,
+      avatar: {},
+      phone: patient.mobile,
+      properties: [],
+      first_name: patient.name,
+      last_name: ''
+      }
+    
+    return this.http.post('/freshchatapis/v2/users', createUserRequest)
+    .pipe(
+      switchMap((createdUser: any) => {
+        console.log(createdUser);
+        
+        const addUserInfoRequest = {
+          user_id: userId,
+          spry_buddy_id: createdUser.id,
+          restore_id: null
+        }
+        return this.http.post('/apis/v1/sprybuddy/accounts', addUserInfoRequest);
+      })
+    )
+    
   }
 }

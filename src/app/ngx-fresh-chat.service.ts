@@ -45,10 +45,12 @@ export class NgxFreshChatService {
     return new Observable( observer => {
       this.getWidget().on('widget:loaded', (res:any) => {
         console.log('widget loaded');
+        
+        
         observer.next(res);
         observer.complete();
       });
-
+      
       this.getWidget().init(data);
       
 
@@ -167,7 +169,7 @@ export class NgxFreshChatService {
    * @author beyondsanity
    */
   close(): void {
-    //this.getWidget().close();
+    this.getWidget().close();
   }
 
   /**
@@ -216,6 +218,8 @@ export class NgxFreshChatService {
   }
 
   private getWidget(): FCWidget {
+    console.log((window as any).fcWidget);
+    
     return (window as any).fcWidget;
   }
 
