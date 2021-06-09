@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280px" height="800px" viewBox="0 0 1280 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Background/Pattern-10</title>
+    <defs>
+        <linearGradient x1="4.53340833%" y1="16.3092472%" x2="108.917296%" y2="110.63523%" id="linearGradient-1">
+            <stop stop-color="#82B1ED" offset="0%"></stop>
+            <stop stop-color="#B073FD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1280" height="800"></rect>
+    </defs>
+    <g id="Background/Pattern-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Background/Pattern-8">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="BG" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <circle id="Circle-6" fill-opacity="0.16" fill="#000000" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="1260.5" cy="81.5" r="197.5"></circle>
+            <circle id="Circle-6-Copy" fill-opacity="0.16" fill="#000000" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="1063.5" cy="740.5" r="197.5"></circle>
+            <circle id="Circle-5" fill-opacity="0.16" fill="#000000" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="560.5" cy="-0.5" r="235.5"></circle>
+            <circle id="Circle-4" fill="#7396FD" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="103.5" cy="740.5" r="165.5"></circle>
+            <circle id="Circle-3" fill="#7396FD" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="468" cy="236" r="92"></circle>
+            <circle id="Circle-2" fill="#7396FD" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="1090.5" cy="175.5" r="27.5"></circle>
+            <circle id="Circle-1" fill-opacity="0.16" fill="#000000" style="mix-blend-mode: overlay;" mask="url(#mask-3)" cx="63" cy="328" r="125"></circle>
+        </g>
+    </g>
+</svg>

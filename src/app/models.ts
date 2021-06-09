@@ -28,8 +28,7 @@ export interface FCUser {
 export interface FBInitObject {
     restoreId?: string;
     externalId?: string;
-    firstName?: string;
-    lastName?: string;
+    name?: string,
     email?: string;
     phone?: string;
     phoneCountryCode?: string;

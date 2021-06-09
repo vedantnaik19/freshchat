@@ -1,0 +1,28 @@
+<mat-toolbar>
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <mat-icon>people</mat-icon>
+        <div fxFlex="1 1 auto" fxFlexOffset="20px">Patients</div>
+    </div>
+</mat-toolbar>
+<div>
+    <div class="card-container">
+        <mat-card *ngFor="let patient of patients">
+            <mat-card-header>
+                <mat-icon>person</mat-icon>
+            </mat-card-header>
+            <mat-card-content>
+                <h1>{{patient.name}}</h1>
+                <h3>{{patient.relation}}</h3>
+                <div>Patient ID : {{patient.patient_id}}</div>
+                <div>Email : {{patient.email_address}}</div>
+                <div>Phone : {{patient.mobile}}</div>
+                <mat-card-actions>
+                    <button (click)="selectPatient(patient.patient_id)">Select</button>
+                </mat-card-actions>
+            </mat-card-content>
+          
+                
+           
+        </mat-card>
+    </div>
+</div>

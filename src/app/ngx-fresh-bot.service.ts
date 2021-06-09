@@ -59,10 +59,7 @@ export class NgxFreshBotService {
                 { 
                     autoInitChat: false, 
                     getClientParams: function () { 
-                        let name = data.firstName? data.firstName : '';
-                        name += data.lastName? ' '+data.lastName:'';
-                        console.log(name);
-                        
+            
                         return {
                             "sn::cstmr::id": data.restoreId,
                             "cstmr::eml": data.email,
@@ -70,7 +67,7 @@ export class NgxFreshBotService {
                             "cstmr::lng": "english",
                             "sn::auth::id": "",
                             "cstmr::phn": data.phone,
-                            "cstmr::nm": name
+                            "cstmr::nm": data.name
                         }; 
                     },
                     ...data.customFunctions 
@@ -130,7 +127,7 @@ export class NgxFreshBotService {
             scriptElement.setAttribute("data-init-type", "opt");
             scriptElement.src = src;
             scriptElement.setAttribute("data-client", "b8af1f3876b4743f5be0c6596bdf1a05ff63998e");
-            scriptElement.setAttribute("data-bot-hash", "797d08d07e440a38ee157ce4b4fc80c06e1e3daa");
+            scriptElement.setAttribute("data-bot-hash", "7ffc3a0a96fd4475ce2ff779bed2616a78ef3ed4");
             scriptElement.setAttribute("data-env", "prod");
             scriptElement.setAttribute("data-region", "in");
             scriptElement.onload  =  () => {

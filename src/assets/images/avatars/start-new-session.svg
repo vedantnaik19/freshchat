@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="152px" viewBox="0 0 133 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 32</title>
+    <defs>
+        <linearGradient x1="11.2100346%" y1="-108.398666%" x2="155.28555%" y2="368.038049%" id="linearGradient-1">
+            <stop stop-color="#82B1ED" offset="0%"></stop>
+            <stop stop-color="#B073FD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4,0.5 L129,0.5 C131.209139,0.5 133,2.290861 133,4.5 L133,147.5 C133,149.709139 131.209139,151.5 129,151.5 L4,151.5 C1.790861,151.5 2.705415e-16,149.709139 0,147.5 L0,4.5 C-2.705415e-16,2.290861 1.790861,0.5 4,0.5 Z" id="path-2"></path>
+        <linearGradient x1="41.7029577%" y1="-36.2483272%" x2="60.7516152%" y2="205.226188%" id="linearGradient-4">
+            <stop stop-color="#82B1ED" offset="0%"></stop>
+            <stop stop-color="#B073FD" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-5" points="0 0 220 0 220 515 0 515"></polygon>
+        <path d="M31,6.66666667 L31,0 L31,0 L31,40 L0,40 L0,0 L24.3571429,0 L31,6.66666667 Z M22.1428571,4.44444444 L4.42857143,4.44444444 L4.42857143,35.5555556 L26.5714286,35.5555556 L26.5714286,8.88888889 L22.1428571,8.88888889 L22.1428571,4.44444444 Z M22.1428571,26.6666667 L22.1428571,28.8888889 L8.85714286,28.8888889 L8.85714286,26.6666667 L22.1428571,26.6666667 Z M22.1428571,20 L22.1428571,22.2222222 L8.85714286,22.2222222 L8.85714286,20 L22.1428571,20 Z M22.1428571,13.3333333 L22.1428571,15.5555556 L8.85714286,15.5555556 L8.85714286,13.3333333 L22.1428571,13.3333333 Z" id="path-7"></path>
+    </defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-32">
+            <g id="Folder-1">
+                <g id="Background">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Container" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    <g id="Group" mask="url(#mask-3)">
+                        <g transform="translate(-16.000000, -31.473684)" id="Background/Pattern-7">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="BG" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            <ellipse id="Circle-4" fill-opacity="0.16" fill="#000000" style="mix-blend-mode: overlay;" mask="url(#mask-6)" cx="199.76" cy="160.144704" rx="115.866667" ry="125.2617"></ellipse>
+                            <ellipse id="Circle-3" fill="#7396FD" style="mix-blend-mode: overlay;" mask="url(#mask-6)" cx="14.08" cy="209.932266" rx="53.9733333" ry="58.3497537"></ellipse>
+                            <ellipse id="Circle-2" fill="#7396FD" style="mix-blend-mode: overlay;" mask="url(#mask-6)" cx="84.1866667" cy="30.760468" rx="16.1333333" ry="17.4415025"></ellipse>
+                            <ellipse id="Circle-1" fill-opacity="0.16" fill="#000000" style="mix-blend-mode: overlay;" mask="url(#mask-6)" cx="-22.2933333" cy="57.7155172" rx="73.3333333" ry="79.2795567"></ellipse>
+                        </g>
+                    </g>
+                </g>
+                <text id="Start-New-Case" font-family="Rubik-Regular, Rubik" font-size="16" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="12" y="105">Start </tspan>
+                    <tspan x="53.088" y="105" font-family="Rubik-Bold, Rubik" font-weight="bold">New </tspan>
+                    <tspan x="12" y="124" font-family="Rubik-Bold, Rubik" font-weight="bold">Case</tspan>
+                </text>
+            </g>
+            <g id="icon/24px/Calendar" transform="translate(40.000000, 20.000000)">
+                <rect id="Boundary" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="53" height="53"></rect>
+                <g id="Calendar" transform="translate(11.000000, 7.000000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#979797" fill-rule="nonzero" xlink:href="#path-7"></use>
+                    <g id="Group" mask="url(#mask-8)">
+                        <g transform="translate(-11.071429, -6.666667)">
+                            <rect id="BG" fill="#FFFFFF" x="0" y="0" width="72" height="72"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="redo" transform="translate(83.500000, 62.500000) scale(-1, 1) rotate(-62.000000) translate(-83.500000, -62.500000) translate(68.000000, 47.000000)" fill="#FFFFFF">
+                <circle id="Oval" cx="15.7909288" cy="15.5852034" r="15"></circle>
+            </g>
+            <rect id="Rectangle" fill="#F4F4F4" x="11" y="135" width="112" height="3" rx="1.5"></rect>
+            <text id="+" font-family="Rubik-Regular, Rubik" font-size="21" font-weight="normal" fill="#9796F4">
+                <tspan x="77" y="69">+</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

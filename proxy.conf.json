@@ -1,7 +1,14 @@
 {
     "/apis/*": {
-        "target": "https://auter3.freshchat.com",
+        "target": "http://15.206.230.180/",
         "secure": false,
         "logLevel": "debug"
+    },
+    "/freshchatapis/*": {
+        "target": "https://auter3.freshchat.com",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true,
+        "pathRewrite": {"^/freshchatapis" : ""}
     }
 }
