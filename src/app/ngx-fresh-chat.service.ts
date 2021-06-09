@@ -31,6 +31,7 @@ export class NgxFreshChatService {
    * @author beyondsanity
    */
   init(data: FCInitObject): Observable<any> {
+
     return this.loadScript('https://wchat.freshchat.com/js/widget.js')
       .pipe(
         first(),
@@ -43,10 +44,28 @@ export class NgxFreshChatService {
   private initWidget(data:any): Observable<any> {
     
     return new Observable( observer => {
+
       this.getWidget().on('widget:loaded', (res:any) => {
         console.log('widget loaded');
+        console.log(res);
         observer.next(res);
         observer.complete();
+      });
+      
+
+      this.getWidget().on('user:created', (res:any) => {
+        console.log('user-created');
+        console.log(res);
+      });
+
+      this.getWidget().on('message:received', (res:any) => {
+        console.log('message:received');
+        console.log(res);
+      });
+
+      this.getWidget().on('message:sent', (res:any) => {
+        console.log('message:sent');
+        console.log(res);
       });
 
       this.getWidget().init(data);
@@ -63,6 +82,7 @@ export class NgxFreshChatService {
    */
   onUserCreate(): Observable<any> {
     return new Observable((observer) => {
+      console.log("FCM widget:" ,this.getWidget());
       this.getWidget().on('user:created', (res:any) => {
         if (res.status !== 200) {
           observer.error(res.status);
@@ -70,6 +90,9 @@ export class NgxFreshChatService {
           observer.next(res.data || null);
         }
       });
+
+      
+     
     });
   }
 
@@ -103,7 +126,6 @@ export class NgxFreshChatService {
       this.getWidget().user.setProperties(user,
         (res:any) => {
           console.log('setUserProperties:'+res.status);
-          
           if (res.status !== 200) {
             observer.error(res.status);
           } else {
