@@ -18,13 +18,15 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthInterceptor } from './auth.interceptor';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DoctorChatComponent } from './doctor-chat/doctor-chat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SpryBuddyComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    DoctorChatComponent
   ],
   imports: [
     BrowserModule,
